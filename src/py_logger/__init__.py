@@ -1,1 +1,1 @@
-from main import get_logger
+from py_logger.main import get_logger
