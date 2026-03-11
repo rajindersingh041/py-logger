@@ -3,7 +3,17 @@ name = "py-logger"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+authors = [
+    { name = "Rajinder Singh", email = "rajinder.singh@zooplus.com" }
+]
 requires-python = ">=3.14"
 dependencies = [
     "loguru>=0.7.3",
 ]
+
+[project.scripts]
+py-logger = "py_logger:main"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
